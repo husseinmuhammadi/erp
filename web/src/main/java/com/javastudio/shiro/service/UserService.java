@@ -1,10 +1,9 @@
 package com.javastudio.shiro.service;
 
-import com.javastudio.shiro.api.dto.User;
+import com.digiboy.erp.api.dto.User;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 @ApplicationScoped

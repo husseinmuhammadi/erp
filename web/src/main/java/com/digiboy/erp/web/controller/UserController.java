@@ -1,4 +1,4 @@
-package com.javastudio.shiro.web.controller;
+package com.digiboy.erp.web.controller;
 
 import com.javastudio.shiro.service.UserService;
 import org.slf4j.Logger;

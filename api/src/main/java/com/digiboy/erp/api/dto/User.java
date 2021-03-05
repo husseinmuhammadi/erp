@@ -1,4 +1,4 @@
-package com.javastudio.shiro.api.dto;
+package com.digiboy.erp.api.dto;
 
 public class User {
     private String username;

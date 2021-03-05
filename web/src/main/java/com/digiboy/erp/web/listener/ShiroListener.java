@@ -1,10 +1,9 @@
-package com.javastudio.shiro.web.listener;
+package com.digiboy.erp.web.listener;
 
 import org.apache.shiro.web.env.DefaultWebEnvironment;
 import org.apache.shiro.web.env.EnvironmentLoaderListener;
 
 import javax.servlet.ServletContextEvent;
-import javax.servlet.annotation.WebListener;
 
 // Already configured in web.xml
 //@WebListener

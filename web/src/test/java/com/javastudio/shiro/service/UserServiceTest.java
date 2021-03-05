@@ -1,6 +1,6 @@
 package com.javastudio.shiro.service;
 
-import com.javastudio.shiro.api.dto.User;
+import com.digiboy.erp.api.dto.User;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotEquals;

@@ -11,11 +11,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>primefaces-installer</module>
         <module>logger</module>
-        <module>type</module>
+        <module>iso</module>
         <module>utils</module>
         <module>api</module>
-        <module>primefaces-installer</module>
         <module>web</module>
         <module>model</module>
         <module>service</module>

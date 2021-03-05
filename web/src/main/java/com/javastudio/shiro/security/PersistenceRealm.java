@@ -1,6 +1,6 @@
 package com.javastudio.shiro.security;
 
-import com.javastudio.shiro.api.dto.User;
+import com.digiboy.erp.api.dto.User;
 import com.javastudio.shiro.service.UserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -11,7 +11,6 @@ import org.apache.shiro.util.SimpleByteSource;
 import org.slf4j.Logger;
 
 import javax.inject.Inject;
-import java.util.Locale;
 
 public class PersistenceRealm extends AuthorizingRealm {
 

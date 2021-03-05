@@ -1,8 +1,6 @@
-package com.javastudio.shiro.web.filter;
+package com.digiboy.erp.web.filter;
 
 import org.apache.shiro.web.servlet.ShiroFilter;
-
-import javax.servlet.annotation.WebFilter;
 
 // This filter already set in web.xml
 // @WebFilter("/*")
