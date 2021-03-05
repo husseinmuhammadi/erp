@@ -1,6 +1,6 @@
 package com.digiboy.erp.web.controller;
 
-import com.javastudio.shiro.service.UserService;
+import com.digiboy.erp.api.UserService;
 import org.slf4j.Logger;
 
 import javax.enterprise.context.RequestScoped;
