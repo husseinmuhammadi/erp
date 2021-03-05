@@ -11,8 +11,15 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>logger</module>
+        <module>type</module>
+        <module>utils</module>
+        <module>api</module>
         <module>primefaces-installer</module>
-        <module>jsf-shiro</module>
+        <module>web</module>
+        <module>model</module>
+        <module>service</module>
+        <module>ear</module>
     </modules>
 
     <properties>
