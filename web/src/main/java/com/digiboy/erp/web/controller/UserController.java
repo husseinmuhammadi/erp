@@ -3,6 +3,7 @@ package com.digiboy.erp.web.controller;
 import com.digiboy.erp.api.UserService;
 import org.slf4j.Logger;
 
+import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -16,7 +17,7 @@ public class UserController {
     @Inject
     private Logger logger;
 
-    @Inject
+    @EJB
     private UserService userService;
 
 }

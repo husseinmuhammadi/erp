@@ -1,4 +1,4 @@
-package com.javastudio.shiro.service;
+package com.digiboy.erp.service;
 
 import com.digiboy.erp.api.UserService;
 import com.digiboy.erp.dto.User;

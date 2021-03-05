@@ -10,6 +10,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.SimpleByteSource;
 import org.slf4j.Logger;
 
+import javax.ejb.EJB;
 import javax.inject.Inject;
 
 public class PersistenceRealm extends AuthorizingRealm {
@@ -17,7 +18,7 @@ public class PersistenceRealm extends AuthorizingRealm {
     @Inject
     Logger logger;
 
-    @Inject
+    @EJB
     private UserService userService;
 
     @Override
