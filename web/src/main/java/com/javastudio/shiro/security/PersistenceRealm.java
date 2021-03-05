@@ -1,7 +1,7 @@
 package com.javastudio.shiro.security;
 
-import com.digiboy.erp.api.dto.User;
-import com.javastudio.shiro.service.UserService;
+import com.digiboy.erp.api.UserService;
+import com.digiboy.erp.dto.User;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.crypto.hash.Sha256Hash;

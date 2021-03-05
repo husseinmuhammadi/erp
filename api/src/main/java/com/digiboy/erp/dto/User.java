@@ -1,4 +1,4 @@
-package com.digiboy.erp.api.dto;
+package com.digiboy.erp.dto;
 
 public class User {
     private String username;
