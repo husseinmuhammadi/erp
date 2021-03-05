@@ -97,7 +97,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>erp-api</artifactId>
             <version>${project.version}</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
