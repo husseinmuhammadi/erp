@@ -3,11 +3,14 @@ package com.javastudio.shiro.service;
 import com.digiboy.erp.api.UserService;
 import com.digiboy.erp.dto.User;
 
+import javax.ejb.Local;
+import javax.ejb.Stateless;
 import javax.enterprise.context.ApplicationScoped;
 import java.util.HashMap;
 import java.util.Map;
 
-@ApplicationScoped
+@Stateless
+@Local(UserService.class)
 public class UserServiceImpl implements UserService {
 
     private static final Map<String, User> USERS = new HashMap<>();
