@@ -4,7 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
 <f:view>
     <h:head>
 
@@ -12,8 +13,9 @@
     <h:body>
         <h:form>
             <h:commandLink value="logout" action="#{logoutController.logout}"/>
+            <h:link value="Products" outcome="product/index"/>
+            <p:commandButton value="Home" action="#{home.index}"/>
         </h:form>
-        <h:link value="Products" outcome="product/index"/>
     </h:body>
 </f:view>
 </html>
