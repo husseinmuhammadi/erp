@@ -1,4 +1,4 @@
-package com.javastudio.shiro.model;
+package com.digiboy.erp.to;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

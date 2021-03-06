@@ -7,8 +7,8 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/ERP</jta-data-source>
 
-        <class>com.javastudio.shiro.model.Product</class>
-        <class>com.javastudio.shiro.model.User</class>
+        <class>com.digiboy.erp.to.Product</class>
+        <class>com.digiboy.erp.to.User</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <shared-cache-mode>NONE</shared-cache-mode>

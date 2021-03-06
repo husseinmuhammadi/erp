@@ -20,4 +20,6 @@ public class UserController {
     @EJB
     private UserService userService;
 
+
+
 }

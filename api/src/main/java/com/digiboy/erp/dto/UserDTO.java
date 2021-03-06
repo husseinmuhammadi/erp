@@ -1,19 +1,16 @@
-package com.javastudio.shiro.model;
+package com.digiboy.erp.dto;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "users")
-public class User {
-    @Id
-    @Column(name = "username", length = 100)
+public class UserDTO {
     private String username;
-
-    @Column(name = "password", length = 40)
     private String password;
+
+    public UserDTO() {
+    }
+
+    public UserDTO(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
     public String getUsername() {
         return username;

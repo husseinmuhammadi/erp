@@ -1,26 +1,31 @@
 package com.digiboy.erp.service;
 
 import com.digiboy.erp.api.UserService;
-import com.digiboy.erp.dto.User;
+import com.digiboy.erp.dao.UserDao;
+import com.digiboy.erp.dto.UserDTO;
+import com.digiboy.erp.mapper.UserMapper;
 
+import javax.ejb.EJB;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
-import javax.enterprise.context.ApplicationScoped;
-import java.util.HashMap;
-import java.util.Map;
+import javax.inject.Inject;
 
 @Stateless
 @Local(UserService.class)
 public class UserServiceImpl implements UserService {
 
-    private static final Map<String, User> USERS = new HashMap<>();
+    @EJB
+    private UserDao dao;
 
-    static {
-        USERS.put("admin", new User("admin", "ac0e7d037817094e9e0b4441f9bae3209d67b02fa484917065f71b16109a1a78"));
-    }
+    @Inject
+    UserMapper mapper;
 
     @Override
-    public User findByUsername(String username) {
-        return USERS.get(username);
+    public UserDTO findByUsername(String username) {
+        return null;
+    }
+
+    public void save(UserDTO userDTO) {
+        dao.save(mapper.toUser(userDTO));
     }
 }

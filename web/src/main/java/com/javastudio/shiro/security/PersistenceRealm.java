@@ -1,7 +1,7 @@
 package com.javastudio.shiro.security;
 
 import com.digiboy.erp.api.UserService;
-import com.digiboy.erp.dto.User;
+import com.digiboy.erp.dto.UserDTO;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.crypto.hash.Sha256Hash;
@@ -31,7 +31,7 @@ public class PersistenceRealm extends AuthorizingRealm {
                 return null;
             }
 
-            User user = userService.findByUsername(username);
+            UserDTO user = userService.findByUsername(username);
             if (user == null) {
                 logger.warn("No account found for user [{}]", username);
                 throw new IncorrectCredentialsException();
