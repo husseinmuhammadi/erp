@@ -2,14 +2,14 @@ package com.digiboy.erp.to;
 
 import com.digiboy.erp.to.base.Auditable;
 import com.digiboy.erp.to.base.EntityBase;
+import com.digiboy.erp.to.listener.AuditListener;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
+@SequenceGenerator(name = "SEQ_GENERATOR", sequenceName = "SEQ_USER")
+@EntityListeners(AuditListener.class)
 public class User extends EntityBase implements Auditable {
     @Column(name = "username", length = 100)
     private String username;

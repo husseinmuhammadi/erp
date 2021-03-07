@@ -5,4 +5,6 @@ import com.digiboy.erp.dto.UserDTO;
 
 public interface UserService {
     UserDTO findByUsername(String username);
+
+    void save(UserDTO userDTO);
 }
