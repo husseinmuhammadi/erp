@@ -7,8 +7,16 @@
         </encoder>
     </appender>
 
-    <logger name="com.javastudio.shiro" level="INFO" additivity="false">
-        <appender-ref ref="STDOUT"/>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_PATH}/test-master.log</file>
+        <encoder>
+            <pattern>%date %level [%thread] %logger{10} %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.digiboy.erp" level="INFO" additivity="false">
+<!--        <appender-ref ref="STDOUT"/>-->
+        <appender-ref ref="FILE"/>
     </logger>
 
     <!-- Strictly speaking, the level attribute is not necessary since -->
